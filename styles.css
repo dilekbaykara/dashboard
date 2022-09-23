@@ -3,7 +3,6 @@ font-family: transducer,sans-serif;
 font-weight: 600;
 font-style: normal;
 font-size: 1.5em;
-margin: 5px;
 }
 
 h3 {
@@ -33,7 +32,7 @@ p {
     display: grid;
     background-color:blueviolet;
     text-align: center;
-    height: 800px;
+    
 }
 
 .main-container {
@@ -44,13 +43,13 @@ p {
 
 .main-content {
     display: grid;
-    grid-template-columns: 50fr 50fr;
-    grid-template-rows: 30fr 30fr;
+    grid-template-columns: 50fr 50fr 30fr;
+    grid-template-rows: repeat(2, 30fr);
     background-color: brown;
-
+    
 }
 
-.box-1, .box-2, .box-3, .box-4 {
+.box-1, .box-2, .box-3, .box-4, .announcements, .trending {
     margin: 1em;
     background-color: aquamarine;
     border-radius: 20px;
