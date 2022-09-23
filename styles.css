@@ -6,13 +6,21 @@ font-style: normal;
 
 }
 
+.main {
+    display: grid;
+    grid-template-columns: 15fr 50fr;
+}
+
 .header {
     background-color: aqua;
 }
 
 .side-bar {
-
+    display: grid;
     background-color:blueviolet;
 
 }
 
+.main-content {
+    background-color: brown;
+}
