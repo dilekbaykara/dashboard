@@ -1,9 +1,23 @@
 h2 {
-
 font-family: transducer,sans-serif;
 font-weight: 600;
 font-style: normal;
+font-size: 1.5em;
+margin: 5px;
+}
 
+h3 {
+
+font-family: transducer-extended, sans-serif;
+font-weight: 600;
+font-style: normal;
+
+}
+
+p {
+    font-family: transducer-extended, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .main {
@@ -19,9 +33,27 @@ font-style: normal;
     display: grid;
     background-color:blueviolet;
     text-align: center;
-
+    height: 800px;
 }
 
-.main-content {
+.main-container {
+    display: grid;
     background-color: brown;
 }
+
+
+.main-content {
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    grid-template-rows: 30fr 30fr;
+    background-color: brown;
+
+}
+
+.box-1, .box-2, .box-3, .box-4 {
+    margin: 1em;
+    background-color: aquamarine;
+    border-radius: 20px;
+    padding: 2em;
+}
+
