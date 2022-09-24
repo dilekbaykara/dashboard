@@ -1,8 +1,16 @@
+h1 {
+    font-family: transducer,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 h2 {
 font-family: transducer,sans-serif;
 font-weight: 600;
 font-style: normal;
-font-size: 1.5em;
+font-size: 1.5em;  
+margin: 1em;
+
 }
 
 h3 {
@@ -21,23 +29,41 @@ p {
 
 .main {
     display: grid;
-    grid-template-columns: 15fr 50fr;
+    grid-template: 1fr/1fr/4fr/4fr;
 }
 
+
 .header {
+    display: grid;
+    padding: 1em;
     background-color: aqua;
+    gap: 1em;
+    grid-area: 1/2/2/4;
+    
+}
+
+.search-bar {
+    border-radius: 40px;
+
 }
 
 .side-bar {
-    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
     background-color:blueviolet;
     text-align: center;
-    
+
 }
 
 .main-container {
     display: grid;
     background-color: brown;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 
