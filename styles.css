@@ -41,6 +41,14 @@ p {
     grid-area: 1/2/2/4;
     
 }
+.meow-header {
+display: inline-flex;
+
+}
+
+button {
+border-radius: 10px;
+}
 
 .search-bar {
     border-radius: 40px;
