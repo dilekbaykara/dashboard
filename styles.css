@@ -101,12 +101,13 @@ button {
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    padding: 10px;
 }
 
 
 .main-content {
     display: grid;
-    grid-template-columns: 30fr 30fr 30fr;
+    grid-template-columns: 10fr 10fr 10fr;
     grid-template-rows: 40em;
     background-color: brown;
     
