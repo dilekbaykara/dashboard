@@ -20,6 +20,11 @@ h3 {
 
 }
 
+.zeytin-pic{
+    width: 60px;
+    align-items: center;
+}
+
 p {
     font-family: transducer-extended, sans-serif;
     font-weight: 400;
@@ -28,16 +33,21 @@ p {
 
 .main {
     display: grid;
-    grid-template: 1fr/1fr/4fr/4fr;
+    grid-area: 1/1/4/4;
+    resize: both;
+   
 }
 
 
 .header {
     display: grid;
-    padding: 30px;
+    padding: 20px;
     background-color: #f9fffb;
-    grid-template-columns: repeat(8, 200px);
+    grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(4, 20px);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-bottom: 20px;
 }
 
 .bell {
@@ -46,13 +56,14 @@ p {
     font-family: transducer,sans-serif;
     font-weight: 600;
     font-style: normal;
-    align-items:center;
+    align-items: center;
 }
 
 .button-box {
     display: flex;
-    grid-column: 8;
+    grid-column: 4;
     grid-row: 4;
+    margin-left: 360px;
     align-items:center;
     justify-content: center;
 }
@@ -106,23 +117,22 @@ button {
     align-items: center;
     background-color:#059669;
     gap: 20px;
+  
 }
 
 .main-container {
-    display: grid;
-    background-color: #bbf7d0;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    padding: 10px;
+    background-color: #bbf7d0;  
+    width: 100vw;
 }
 
 
 .main-content {
     display: grid;
-    grid-template-columns: 10fr 10fr 10fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 40em;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
     background-color: #bbf7d0;
     padding: 20px;
     
